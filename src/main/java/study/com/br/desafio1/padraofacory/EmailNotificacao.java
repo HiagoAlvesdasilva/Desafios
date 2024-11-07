@@ -5,6 +5,12 @@ public class EmailNotificacao implements Notificacao {
     private String assunto;
     private String corpo;
 
+    public EmailNotificacao(String enderecoEmail, String assunto, String corpo) {
+        this.enderecoEmail = enderecoEmail;
+        this.assunto = assunto;
+        this.corpo = corpo;
+    }
+
     @Override
     public void enviar() {
         System.out.println("Enviando Email para " + this.getEnderecoEmail() + " com o assunto: " + this.getAssunto() + " e o corpo: " + this.getCorpo());
