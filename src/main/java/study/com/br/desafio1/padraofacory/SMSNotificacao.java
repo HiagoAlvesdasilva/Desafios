@@ -5,7 +5,7 @@ public class SMSNotificacao implements Notificacao {
     private String mensagem;
 
     public SMSNotificacao(String numeroTelefone, String mensagem) {
-        this.numeroTelefone = numeroTelefone;
+        this.numeroTelefone =
         this.mensagem = mensagem;
     }
 
@@ -19,11 +19,12 @@ public class SMSNotificacao implements Notificacao {
     }
 
     public void setNumeroTelefone(String numeroTelefone) {
-        if (numeroTelefone.length() != 11) {
+        if (numeroTelefone == null || numeroTelefone.length() != 11) {
             throw new IllegalArgumentException("Número de telefone inválido");
         }
         this.numeroTelefone = numeroTelefone;
     }
+
 
     public String getMensagem() {
         return mensagem;

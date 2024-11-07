@@ -1,25 +1,25 @@
 package study.com.br.desafio1.padraofacory;
 
 public class PushNotificacao implements Notificacao {
-    private String dispositivo;
+    private int idDispositivo;
     private String mensagem;
 
-    public PushNotificacao(String dispositivo, String mensagem) {
-        this.dispositivo = dispositivo;
+    public PushNotificacao(int idDispositivo, String mensagem) {
+        this.idDispositivo = idDispositivo;
         this.mensagem = mensagem;
     }
 
     @Override
     public void enviar() {
-        System.out.println("Enviando Push para " + this.getDispositivo() + " com a mensagem: " + this.getMensagem());
+        System.out.println("Enviando Push para Dispositivo" + this.getIdDispositivo() + " com a mensagem: " + this.getMensagem());
     }
 
-    public String getDispositivo() {
-        return dispositivo;
+    public int getIdDispositivo() {
+        return idDispositivo;
     }
 
-    public void setDispositivo(String dispositivo) {
-        this.dispositivo = dispositivo;
+    public void setIdDispositivo(int idDispositivo) {
+        this.idDispositivo = idDispositivo;
     }
 
     public String getMensagem() {
