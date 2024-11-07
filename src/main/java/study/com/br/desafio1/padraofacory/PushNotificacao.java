@@ -4,6 +4,11 @@ public class PushNotificacao implements Notificacao {
     private String dispositivo;
     private String mensagem;
 
+    public PushNotificacao(String dispositivo, String mensagem) {
+        this.dispositivo = dispositivo;
+        this.mensagem = mensagem;
+    }
+
     @Override
     public void enviar() {
         System.out.println("Enviando Push para " + this.getDispositivo() + " com a mensagem: " + this.getMensagem());
