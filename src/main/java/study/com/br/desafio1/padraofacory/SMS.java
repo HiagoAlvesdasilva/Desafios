@@ -11,7 +11,7 @@ public class SMS implements Notificacao {
 
     @Override
     public void enviar() {
-        System.out.println("Enviando SMS");
+        System.out.println("Enviando SMS para " + numeroTelefone + " com a mensagem: " + mensagem);
     }
 
     public String getNumeroTelefone() {
