@@ -19,6 +19,9 @@ public class SMSNotificacao implements Notificacao {
     }
 
     public void setNumeroTelefone(String numeroTelefone) {
+        if (numeroTelefone.length() != 11) {
+            throw new IllegalArgumentException("Número de telefone inválido");
+        }
         this.numeroTelefone = numeroTelefone;
     }
 

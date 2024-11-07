@@ -15,6 +15,9 @@ public class EmailNotificacao implements Notificacao {
     }
 
     public void setEnderecoEmail(String enderecoEmail) {
+        if (!enderecoEmail.contains("@")) {
+            throw new IllegalArgumentException("Endereço de email inválido");
+        }
         this.enderecoEmail = enderecoEmail;
     }
 
