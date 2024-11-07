@@ -1,6 +1,6 @@
 package study.com.br.desafio1.padraofacory;
 
-public class Email implements Notificacao {
+public class EmailNotificacao implements Notificacao {
     private String enderecoEmail;
     private String assunto;
     private String corpo;

@@ -1,6 +1,6 @@
 package study.com.br.desafio1.padraofacory;
 
-public class Push implements Notificacao {
+public class PushNotificacao implements Notificacao {
     private String dispositivo;
     private String mensagem;
 

@@ -1,17 +1,17 @@
 package study.com.br.desafio1.padraofacory;
 
-public class SMS implements Notificacao {
+public class SMSNotificacao implements Notificacao {
     private String numeroTelefone;
     private String mensagem;
 
-    public SMS(String numeroTelefone, String mensagem) {
+    public SMSNotificacao(String numeroTelefone, String mensagem) {
         this.numeroTelefone = numeroTelefone;
         this.mensagem = mensagem;
     }
 
     @Override
     public void enviar() {
-        System.out.println("Enviando SMS para " + numeroTelefone + " com a mensagem: " + mensagem);
+        System.out.println("Enviando SMS para " + this.getNumeroTelefone() + " com a mensagem: " + this.getMensagem());
     }
 
     public String getNumeroTelefone() {
