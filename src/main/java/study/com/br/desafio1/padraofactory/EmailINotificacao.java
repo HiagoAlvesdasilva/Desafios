@@ -1,11 +1,14 @@
-package study.com.br.desafio1.padraofacory;
+package study.com.br.desafio1.padraofactory;
 
-public class EmailNotificacao implements Notificacao {
+public class EmailINotificacao implements INotificacao {
     private String enderecoEmail;
     private String assunto;
     private String corpo;
 
-    public EmailNotificacao(String enderecoEmail, String assunto, String corpo) {
+    public EmailINotificacao() {
+    }
+
+    public EmailINotificacao(String enderecoEmail, String assunto, String corpo) {
         this.enderecoEmail = enderecoEmail;
         this.assunto = assunto;
         this.corpo = corpo;

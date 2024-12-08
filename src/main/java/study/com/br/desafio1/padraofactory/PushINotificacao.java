@@ -1,10 +1,13 @@
-package study.com.br.desafio1.padraofacory;
+package study.com.br.desafio1.padraofactory;
 
-public class PushNotificacao implements Notificacao {
+public class PushINotificacao implements INotificacao {
     private int idDispositivo;
     private String mensagem;
 
-    public PushNotificacao(int idDispositivo, String mensagem) {
+    public PushINotificacao() {
+    }
+
+    public PushINotificacao(int idDispositivo, String mensagem) {
         this.idDispositivo = idDispositivo;
         this.mensagem = mensagem;
     }

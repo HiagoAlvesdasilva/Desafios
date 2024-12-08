@@ -15,4 +15,5 @@ public class SenhaHandler extends AutenticacaoHandler {
         System.out.println("Falha na verificação de senha.");
         return false;
     }
+
 }

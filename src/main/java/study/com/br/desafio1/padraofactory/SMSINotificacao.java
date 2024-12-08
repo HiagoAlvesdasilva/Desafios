@@ -1,10 +1,13 @@
-package study.com.br.desafio1.padraofacory;
+package study.com.br.desafio1.padraofactory;
 
-public class SMSNotificacao implements Notificacao {
+public class SMSINotificacao implements INotificacao {
     private String numeroTelefone;
     private String mensagem;
 
-    public SMSNotificacao(String numeroTelefone, String mensagem) {
+    public SMSINotificacao() {
+    }
+
+    public SMSINotificacao(String numeroTelefone, String mensagem) {
         this.numeroTelefone =
         this.mensagem = mensagem;
     }
